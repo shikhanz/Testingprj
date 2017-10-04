@@ -1,0 +1,62 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Ecommerce" parallel="classes" thread-count="3" >
+
+ 
+<test name="testing chrome">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="baseURL" value="http://live.guru99.com/"></parameter>
+<classes>
+<class name="Ecommerce.Day1"/>
+</classes>
+</test>
+
+<test name="testing product price">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="baseURL" value="http://live.guru99.com/"></parameter>
+<classes>
+<class name="Ecommerce.Day2"/>
+</classes>
+</test>
+
+<test name="testing Day 3">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="baseURL" value="http://live.guru99.com/"></parameter>
+<parameter name="qty" value="1000"></parameter>
+<classes>
+<class name="Ecommerce.Day3"/>
+</classes>
+</test>
+
+<test name="testing Day 4">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="baseURL" value="http://live.guru99.com/"></parameter>
+<classes>
+<class name="Ecommerce.Day4"/>
+</classes>
+</test>
+
+<test name="testing Day 5">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="baseURL" value="http://live.guru99.com/"></parameter>
+<classes>
+<class name="Ecommerce.Day5"/>
+</classes>
+</test>
+
+<test name="testing Day 6">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="baseURL" value="http://live.guru99.com/"></parameter>
+<classes>
+<class name="Ecommerce.Day6"/>
+</classes>
+</test>
+
+
+ <test name="Day10">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="baseURL" value="http://live.guru99.com/index.php/backendlogin"></parameter>
+<classes>
+<class name="Ecommerce.Day10"></class>
+</classes>
+</test>
+</suite>
